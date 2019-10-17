@@ -18,6 +18,7 @@ export class RequestComponent implements OnInit {
     firstCtrl : new FormControl(''),
     secondCtrl : new FormControl(''),
     thirdCtrl : new FormControl(''),
+    fourthCtrl : new FormControl(''),
   });
   isLinear = false;
   // firstFormGroup: FormGroup;
@@ -40,6 +41,7 @@ export class RequestComponent implements OnInit {
       firstCtrl: ['', Validators.required],
       secondCtrl: ['', Validators.required],
       thirdCtrl: ['', Validators.required],
+      fourthCtrl: ['', Validators.required],
     });
   }
 }

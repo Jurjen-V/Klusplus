@@ -11,8 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
 import {
   MatButtonModule,
   MatCardModule,
-  MatCheckboxModule,
-  MatDatepickerModule,
+  MatCheckboxModule, MatDatepickerModule, MatIconModule,
+  MatNativeDateModule,
   MatInputModule,
   MatSelectModule,
   MatStepperModule
@@ -47,8 +47,10 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatCardModule,
     MatStepperModule,
+    MatCheckboxModule,
     MatDatepickerModule,
-    MatCheckboxModule
+    MatIconModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

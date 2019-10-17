@@ -43,12 +43,14 @@
       </mat-form-field>
       <mat-form-field class="form__input">
         <input formControlName="thirdCtrl" matInput [matDatepicker]="picker" placeholder="Choose a date">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
       <mat-form-field class="form__input">
         <mat-label>Welk moment van de dag?</mat-label>
-        <mat-select>
+        <mat-select formControlName="fourthCtrl">
           <mat-option value="'s Ochtends">'s Ochtends</mat-option>
           <mat-option value="'s Middags">'s Middags</mat-option>
           <mat-option value="Hele dag">Hele dag</mat-option>
@@ -76,7 +78,8 @@
       <h3 class="overzicht__h3">Reperatie gegevens</h3>
       <p class="overzicht__p">Categorie: {{ secondFormGroup.value.firstCtrl }}</p>
       <p class="overzicht__p">Omschrijving: {{ secondFormGroup.value.secondCtrl}}</p>
-      <p class="overzicht__p">Wanneer: {{ secondFormGroup.value.thirdCtrl }}</p>
+      <p class="overzicht__p">Datum: {{ secondFormGroup.value.thirdCtrl }}</p>
+      <p class="overzicht__p">Wanneer: {{ secondFormGroup.value.fourthCtrl }}</p>
     </div>
     <div class="form__button">
       <button mat-button matStepperPrevious>Back</button>
