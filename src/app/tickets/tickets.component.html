@@ -1,1 +1,17 @@
-<p>tickets works!</p>
+<a mat-raised-button routerLink="/home" routerLinkActive="active">Home</a>
+<a mat-raised-button routerLink="/profile" routerLinkActive="active">Profiel</a>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let ticket of tickets">
+    <mat-expansion-panel-header>
+      <mat-panel-title [title]="ticket.categorie">
+        {{ticket.Categorie }}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ticket.Datum }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+      Omschijving: {{ticket.Omschrijving }}, <br>
+      Moment van de dag: {{ticket.Moment }}
+  </mat-expansion-panel>
+</mat-accordion>
+

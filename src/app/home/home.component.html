@@ -1,8 +1,12 @@
-<mat-card class="card">
-  <mat-card-header class="card__header">
-    <div mat-card-avatar class="card__header__image"></div>
-    <mat-card-title class="card__header__title">Jurjen Veenstra</mat-card-title>
-    <mat-card-subtitle><button mat-raised-button class="card__header__button">Direct reparatie aanvragen!</button></mat-card-subtitle>
-    <mat-card-subtitle class="card__header__subtitle">Al een klant?<a class="card__header__subtitle__link" href="../request/request.component.html">Inloggen</a> </mat-card-subtitle>
-  </mat-card-header>
-</mat-card>
+<html>
+  <mat-card class="card">
+    <mat-card-header class="card__header">
+      <div mat-card-avatar class="card__header__image"></div>
+      <mat-card-title class="card__header__title">Jurjen Veenstra</mat-card-title>
+      <mat-card-subtitle><a mat-raised-button class="card__header__button" routerLink="/request" routerLinkActive="active">Direct reparatie aanvragen!</a></mat-card-subtitle>
+      <mat-card-subtitle class="card__header__subtitle">Al een klant?<a routerLink="/requestlogin" routerLinkActive="active" class="card__header__subtitle__link">Inloggen</a> </mat-card-subtitle>
+      <mat-card-subtitle><a mat-button routerLink="/diy" routerLinkActive="active">DIY</a>
+        <a mat-button routerLink="/profile" routerLinkActive="active">Profiel</a></mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</html>

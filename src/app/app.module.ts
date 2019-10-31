@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { DIYComponent } from './diy/diy.component';
 import { RequestComponent } from './request/request.component';
+import { RequestLoginComponent } from './requestlogin/requestLogin.component';
 import { ProfileComponent } from './profile/profile.component';
 import {
   MatButtonModule,
@@ -15,7 +16,7 @@ import {
   MatNativeDateModule,
   MatInputModule,
   MatSelectModule,
-  MatStepperModule
+  MatStepperModule, MatExpansionModule
 } from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -26,6 +27,8 @@ const appRoutes: Routes = [
   { path: 'home',      component: HomeComponent },
   { path: 'request', component: RequestComponent},
   { path: 'profile', component: ProfileComponent},
+  { path: 'requestlogin', component: RequestLoginComponent},
+  { path: 'diy', component: DIYComponent},
 ];
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ const appRoutes: Routes = [
     DIYComponent,
     RequestComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    RequestLoginComponent
   ],
   imports: [
     RouterModule.forChild(appRoutes),
@@ -51,6 +55,7 @@ const appRoutes: Routes = [
     MatDatepickerModule,
     MatIconModule,
     MatNativeDateModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

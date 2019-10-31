@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { diy } from '../diy1';
 
 @Component({
   selector: 'app-diy',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diy.component.scss']
 })
 export class DIYComponent implements OnInit {
-
+  diy = diy;
   constructor() { }
 
   ngOnInit() {
