@@ -32,8 +32,8 @@
       </mat-form-field>
 
       <div class="form__button">
-        <a mat-button routerLink="/home" routerLinkActive="active">Back</a>
-        <button mat-button matStepperNext>Next</button>
+        <a mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">keyboard_arrow_left</i></a>
+        <button mat-button matStepperNext><i class="material-icons">keyboard_arrow_right</i></button>
       </div>
     </form>
   </mat-step>
@@ -48,8 +48,8 @@
       <p class="overzicht__p">Wanneer: {{ secondFormGroup.value.fourthCtrl }}</p>
     </div>
     <div class="form__button">
-      <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
+      <button mat-button matStepperPrevious><i class="material-icons">keyboard_arrow_left</i></button>
+      <button mat-button (click)="stepper.reset()"><i class="material-icons">replay</i></button>
       <a mat-button routerLink="/tickets" routerLinkActive="active">Ticket overzicht</a>
     </div>
   </mat-step>

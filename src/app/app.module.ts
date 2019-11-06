@@ -16,7 +16,7 @@ import {
   MatNativeDateModule,
   MatInputModule,
   MatSelectModule,
-  MatStepperModule, MatExpansionModule
+  MatStepperModule, MatExpansionModule, MatTabsModule
 } from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -56,6 +56,7 @@ const appRoutes: Routes = [
     MatIconModule,
     MatNativeDateModule,
     MatExpansionModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,38 +1,42 @@
+.card.mat-card{
+  padding: 0%;
+}
+.mat-card-header-text{
+  margin-left: 0%;
+}
 .card{
-  width:35%;
-  margin-left: 32.5%;
+  width:100%;
+  //margin-left: 32.5%;
   height: 800px;
   background-color: #d4d4d4;
   &__header {
     &__image {
-      background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
       background-size: cover;
-      background-color: pink;
       vertical-align: middle;
-      width: 400px;
-      height: 400px;
+      width: 50%;
+      height: 50%;
       border-radius: 50%;
       float: left;
       margin-top: 5%;
-      margin-left: 20%;
+      margin-left: 25%;
     }
     &__title{
+      //margin-left: 25%;
       margin-top: 500px;
-      margin-left: -110%;
       width: 200px;
     }
     &__button{
       text-decoration: none;
       margin-top: 5px;
-      margin-left: -130%;
       background-color:#ff00cc;
       color: white;
       font-size: 18px;
     }
-    &__subtitle{
-      margin-left: -85%;
-      &__link{
-        color: black;
+    &__form{
+      width: 400px;
+      //margin-left: 25%;
+      &__field{
+        width: 90%;
       }
     }
   }
