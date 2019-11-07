@@ -4,3 +4,9 @@
 .mat-expansion-panel:nth-child(even){
   background-color: #f2f2f2;
 }
+.ticket{
+  &__title{
+    margin-left: 5%;
+    color: #64c4b9;
+  }
+}

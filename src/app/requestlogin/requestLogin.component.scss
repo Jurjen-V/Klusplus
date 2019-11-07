@@ -8,10 +8,15 @@
 }
 .overzicht{
   width: 100%;
+  color: #64c4b9;
   &__h3{
     margin-left: 5%;
   }
   &__p{
     margin-left: 10%;
+    color: #000;
+  }
+  &__h1{
+    margin-left: 5%;
   }
 }

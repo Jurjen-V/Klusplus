@@ -13,22 +13,19 @@
     &__image {
       background-size: cover;
       vertical-align: middle;
-      width: 50%;
-      height: 50%;
-      border-radius: 50%;
+      width: 400px;
+      height: auto;
       float: left;
-      margin-top: 5%;
-      margin-left: 25%;
+      margin-top: 10%;
     }
     &__title{
       //margin-left: 25%;
-      margin-top: 500px;
       width: 200px;
     }
     &__button{
       text-decoration: none;
-      margin-top: 5px;
-      background-color:#ff00cc;
+      margin-top: 20%;
+      background-color:#64c4b9;
       color: white;
       font-size: 18px;
     }

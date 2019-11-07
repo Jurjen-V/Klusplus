@@ -1,26 +1,26 @@
-<mat-horizontal-stepper [linear]="!isLinear" #stepper>
+<mat-horizontal-stepper class="stepper" [linear]="!isLinear" #stepper>
   <mat-step [stepControl]="firstFormGroup">
-    <form class="form" [formGroup]="firstFormGroup">
+    <form class="stepper__form" [formGroup]="firstFormGroup">
       <ng-template matStepLabel>Uw gegevens</ng-template>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <input matInput placeholder="Voornaam" formControlName="firstCtrl" required>
       </mat-form-field>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <input matInput placeholder="Achternaam" formControlName="secondCtrl" required>
       </mat-form-field >
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <input matInput placeholder="Postcode" formControlName="thirdCtrl" required>
       </mat-form-field>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <input matInput placeholder="Straat + huisnummer" formControlName="fourthCtrl" required>
       </mat-form-field>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <input matInput placeholder="E-mail" formControlName="fifthCtrl" required>
       </mat-form-field>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <input matInput placeholder="Telefoonnummer" formControlName="sixtCtrl" required>
       </mat-form-field>
-      <div class="form__button">
+      <div class="stepper__form__button">
         <a mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">keyboard_arrow_left</i></a>
         <button mat-button matStepperNext><i class="material-icons">keyboard_arrow_right</i></button>
       </div>
@@ -76,7 +76,7 @@
       <p class="overzicht__p">E-mail: {{ firstFormGroup.value.fifthCtrl }}</p>
       <p class="overzicht__p">Telefoonnummer: {{ firstFormGroup.value.sixtCtrl}}</p>
 
-      <h3 class="overzicht__h3">Reperatie gegevens</h3>
+      <h3 class="overzicht__h3">Reparatie gegevens</h3>
       <p class="overzicht__p">Categorie: {{ secondFormGroup.value.firstCtrl }}</p>
       <p class="overzicht__p">Omschrijving: {{ secondFormGroup.value.secondCtrl}}</p>
       <p class="overzicht__p">Datum: {{ secondFormGroup.value.thirdCtrl }}</p>

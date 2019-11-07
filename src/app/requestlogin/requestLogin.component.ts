@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {user} from '../users';
 
 @Component({
   selector: 'app-requestlogin',
@@ -7,6 +8,10 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./requestLogin.component.scss']
 })
 export class RequestLoginComponent implements OnInit {
+  user = user;
+  firstFormGroup = new FormGroup({
+    firstCtrl : new FormControl(''),
+  });
   secondFormGroup = new FormGroup({
     firstCtrl : new FormControl(''),
     secondCtrl : new FormControl(''),
@@ -22,6 +27,9 @@ export class RequestLoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.firstFormGroup = this._formBuilder.group({
+      firstCtrl: ['', Validators.required],
+    });
     this.secondFormGroup = this._formBuilder.group({
       firstCtrl: ['', Validators.required],
       secondCtrl: ['', Validators.required],

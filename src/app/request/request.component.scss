@@ -1,19 +1,30 @@
 .mat-stepper-horizontal, .mat-stepper-vertical{
   background-color: #d4d4d4;;
 }
-.form{
-  &__button{
-  }
-  &__input{
-    width: 100%;
+.stepper{
+  &__form{
+    &__button{
+      text-decoration: none;
+      margin-top: 50%;
+      font-size: 18px;
+    }
+    &__input{
+      width: 100%;
+    }
   }
 }
+
 .overzicht{
   width: 100%;
+  color: #64c4b9;
   &__h3{
     margin-left: 5%;
   }
   &__p{
     margin-left: 10%;
+    color: #000;
+  }
+  &__h1{
+    margin-left: 5%;
   }
 }
