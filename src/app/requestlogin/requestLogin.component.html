@@ -1,22 +1,22 @@
-<mat-horizontal-stepper [linear]="!isLinear" #stepper>
+<mat-horizontal-stepper class="stepper" [linear]="!isLinear" #stepper>
   <mat-step [stepControl]="firstFormGroup">
-    <form class="form" [formGroup]="firstFormGroup">
+    <form class="stepper__form" [formGroup]="firstFormGroup">
       <ng-template matStepLabel>Uw gegevens</ng-template>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <mat-select placeholder="Login" formControlName="firstCtrl">
           <mat-option *ngFor="let user of user" value="{{user.Name }}"> {{ user.Name }}</mat-option>
         </mat-select>
       </mat-form-field>
-      <div class="form__button">
+      <div class="stepper__form__button">
         <a mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">keyboard_arrow_left</i></a>
         <button mat-button matStepperNext><i class="material-icons">keyboard_arrow_right</i></button>
       </div>
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup">
-    <form class="form" [formGroup]="secondFormGroup">
+    <form class="stepper__form" [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Aanmelden van reperatie</ng-template>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <mat-select placeholder="Categorie" formControlName="firstCtrl">
           <mat-option value="verwarming">verwarming</mat-option>
           <mat-option value="voorziening">voorziening</mat-option>
@@ -26,17 +26,17 @@
           <mat-option value="overige">overige</mat-option>
         </mat-select>
       </mat-form-field>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <textarea formControlName="secondCtrl" matInput placeholder="Omscrhijving"></textarea>
       </mat-form-field>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <input formControlName="thirdCtrl" matInput [matDatepicker]="picker" placeholder="Choose a date">
         <mat-datepicker-toggle matSuffix [for]="picker">
           <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
         </mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
-      <mat-form-field class="form__input">
+      <mat-form-field class="stepper__form__input">
         <mat-label>Welk moment van de dag?</mat-label>
         <mat-select formControlName="fourthCtrl">
           <mat-option value="'s Ochtends">'s Ochtends</mat-option>
@@ -45,7 +45,7 @@
         </mat-select>
       </mat-form-field>
 
-      <div class="form__button">
+      <div class="stepper__form__button">
         <a mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">keyboard_arrow_left</i></a>
         <button mat-button matStepperNext><i class="material-icons">keyboard_arrow_right</i></button>
       </div>
@@ -63,7 +63,7 @@
       <p class="overzicht__p">Datum: {{ secondFormGroup.value.thirdCtrl }}</p>
       <p class="overzicht__p">Wanneer: {{ secondFormGroup.value.fourthCtrl }}</p>
     </div>
-    <div class="form__button">
+    <div class="stepper__form__button">
       <button mat-button matStepperPrevious><i class="material-icons">keyboard_arrow_left</i></button>
       <button mat-button (click)="stepper.reset()"><i class="material-icons">replay</i></button>
       <a mat-button routerLink="/tickets" routerLinkActive="active">Ticket overzicht</a>

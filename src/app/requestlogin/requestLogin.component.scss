@@ -1,9 +1,16 @@
 .mat-stepper-horizontal, .mat-stepper-vertical{
   background-color: #d4d4d4;;
 }
-.form{
-  &__input{
-    width: 100%;
+.stepper{
+  &__form{
+    &__button{
+      text-decoration: none;
+      margin-top: 50%;
+      font-size: 18px;
+    }
+    &__input{
+      width: 100%;
+    }
   }
 }
 .overzicht{
