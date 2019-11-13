@@ -1,5 +1,6 @@
+@import "../global";
 .mat-stepper-horizontal, .mat-stepper-vertical{
-  background-color: #d4d4d4;;
+  background-color: $background-white;
 }
 .stepper{
   &__form{
@@ -15,7 +16,7 @@
 }
 .overzicht{
   width: 100%;
-  color: #64c4b9;
+  color: $klusplus-blue;
   &__h3{
     margin-left: 5%;
   }

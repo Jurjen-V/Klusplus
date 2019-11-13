@@ -1,12 +1,14 @@
+@import "../global";
+
 .mat-expansion-panel:nth-child(odd){
-  background-color: #e9e9e9;
+  background-color: $list-odd;
 }
 .mat-expansion-panel:nth-child(even){
-  background-color: #f2f2f2;
+  background-color: $list-even;
 }
 .diy{
   &__title{
     margin-left: 5%;
-    color: #64c4b9;
+    color: $klusplus-blue;
   }
 }

@@ -1,3 +1,4 @@
+@import "../global";
 .card.mat-card{
   padding: 0%;
 }
@@ -8,7 +9,7 @@
   width:100%;
   //margin-left: 32.5%;
   height: 800px;
-  background-color: #d4d4d4;
+  background-color: $background-white;
   &__header {
     &__image {
       background-size: cover;
@@ -24,7 +25,7 @@
       text-decoration: none;
       margin-top: 70%;
       margin-left: 15%;
-      background-color:#64c4b9;
+      background-color:$klusplus-blue;
       color: white;
       font-size: 18px;
     }
