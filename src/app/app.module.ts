@@ -21,6 +21,8 @@ import {
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 const appRoutes: Routes = [
   { path: 'tickets', component: TicketsComponent },
   { path: 'contact',      component: DIYComponent},
@@ -58,6 +60,7 @@ const appRoutes: Routes = [
     MatNativeDateModule,
     MatExpansionModule,
     MatTabsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
