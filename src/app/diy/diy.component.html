@@ -1,14 +1,14 @@
 <a mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">home</i></a>
 <a mat-button routerLink="/profile" routerLinkActive="active"><i class="material-icons">perm_identity</i></a>
-<h1 class="diy__title">DIY tips</h1>
+<h1 class="diy__title">Diy tips</h1>
 <mat-accordion>
   <mat-expansion-panel *ngFor="let diy of diy">
     <mat-expansion-panel-header>
-      <mat-panel-title [title]="diy.Categorie">
-        {{diy.Categorie }}
+      <mat-panel-title [title]="diy.categorie">
+        {{diy.categorie }}
       </mat-panel-title>
     </mat-expansion-panel-header>
-    Omschijving: {{diy.Omschrijving }}
+    Omschijving: {{diy.omschrijving }}
   </mat-expansion-panel>
 </mat-accordion>
 

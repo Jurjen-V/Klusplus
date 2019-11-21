@@ -5,9 +5,14 @@
 .stepper{
   &__form{
     &__button{
+      position: absolute;
+      bottom: 10px;
       text-decoration: none;
-      margin-top: 50%;
-      font-size: 18px;
+      margin-top: 20%;
+      background-color: $klusplus-blue;
+      color: white;
+      font-size: 24px;
+      border-radius: 5px;
     }
     &__input{
       width: 100%;

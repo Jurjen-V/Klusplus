@@ -1,8 +1,8 @@
 export class User {
   id: number;
-  Name: string;
-  Straat: string;
-  Postcode: string;
-  Stad: string;
-  Telefoonnummer: string;
+  name: string;
+  straat: string;
+  postcode: string;
+  stad: string;
+  telefoonnummer: string;
 }

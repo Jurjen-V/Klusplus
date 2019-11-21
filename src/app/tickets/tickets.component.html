@@ -5,14 +5,14 @@
   <mat-expansion-panel *ngFor="let ticket of tickets">
     <mat-expansion-panel-header>
       <mat-panel-title [title]="ticket.categorie">
-        {{ticket.Categorie }}
+        {{ticket.categorie }}
       </mat-panel-title>
       <mat-panel-description>
-        {{ticket.Datum }}
+        {{ticket.datum }}
       </mat-panel-description>
     </mat-expansion-panel-header>
-      Omschijving: {{ticket.Omschrijving }}, <br>
-      Moment van de dag: {{ticket.Moment }}
+      Omschijving: {{ticket.omschrijving }}, <br>
+      Moment van de dag: {{ticket.moment }}
   </mat-expansion-panel>
 </mat-accordion>
 

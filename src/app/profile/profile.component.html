@@ -1,21 +1,21 @@
 <mat-tab-group>
-  <mat-tab label="{{user.Name }}"  *ngFor="let user of user">
+  <mat-tab label="{{user.name }}"  *ngFor="let user of user">
     <mat-card class="card">
       <mat-card-header class="card__header">
         <mat-card-subtitle><img class="card__header__image" src="assets/img/Logo.png"></mat-card-subtitle>
-        <mat-card-title class="card__header__title">{{ user.Name }}</mat-card-title>
+        <mat-card-title class="card__header__title">{{ user.name }}</mat-card-title>
         <mat-card-subtitle class="card__header__form">
           <mat-form-field class="example-full-width card__header__form__field">
-            <input matInput placeholder="Straat" value="{{ user.Straat }}">
+            <input matInput placeholder="Straat" value="{{ user.straat }}">
           </mat-form-field>
           <mat-form-field class="example-full-width card__header__form__field">
-            <input matInput placeholder="Postcode" value="{{ user.Postcode }}">
+            <input matInput placeholder="Postcode" value="{{ user.postcode }}">
           </mat-form-field>
           <mat-form-field class="example-full-width card__header__form__field">
-            <input matInput placeholder="Stad" value="{{ user.Stad }}">
+            <input matInput placeholder="Stad" value="{{ user.stad }}">
           </mat-form-field>
           <mat-form-field class="example-full-width card__header__form__field">
-            <input matInput placeholder="Telefoonnummer" value="{{ user.Telefoonnummer }}">
+            <input matInput placeholder="Telefoonnummer" value="{{ user.telefoonnummer }}">
           </mat-form-field>
         </mat-card-subtitle>
         <mat-card-subtitle><a class="card__header__button" mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">keyboard_arrow_left</i></a></mat-card-subtitle>

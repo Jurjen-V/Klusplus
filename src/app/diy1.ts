@@ -1,64 +1,64 @@
-import {DIY} from './diy';
+import {Diy} from './Diy';
 
-export const diy: DIY[] = [
+export const diy: Diy[] = [
   {
     id: 1,
-    Categorie: 'Sanitair',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.,',
+    categorie: 'Sanitair',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.,',
   },
   {
     id: 2,
-    Categorie: 'Verwarming',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Verwarming',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 3,
-    Categorie: 'Sanitair',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Sanitair',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 4,
-    Categorie: 'Verwarming',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Verwarming',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 5,
-    Categorie: 'Sanitair',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Sanitair',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 6,
-    Categorie: 'Verwarming',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Verwarming',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 7,
-    Categorie: 'Sanitair',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Sanitair',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 8,
-    Categorie: 'Verwarming',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Verwarming',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 9,
-    Categorie: 'Sanitair',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Sanitair',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 10,
-    Categorie: 'Sanitair',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Sanitair',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 11,
-    Categorie: 'Sanitair',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Sanitair',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
   {
     id: 12,
-    Categorie: 'Verwarming',
-    Omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
+    categorie: 'Verwarming',
+    omschrijving: ' is slechts een proeftekst uit het drukkerij- en zetterijwezen.',
   },
 ];
